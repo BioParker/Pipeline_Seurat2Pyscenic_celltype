@@ -79,7 +79,6 @@ process add_cor {
             tuple path(adj_file), path(loomfile), val(celltype)
 
         output:
-            //tuple path("${celltype}_adj_wcor.csv"), path("${loomfile}"), val("${celltype}")
             tuple val("${celltype}"), path("${loomfile}"), path("${celltype}_adj_wcor.csv")
 
         script:
@@ -108,7 +107,6 @@ process ctx {
             path motif2tf
 
         output:
-            //tuple path("${celltype}_regulons.csv"), path("$loomfile") ,val("${celltype}")
             tuple val("${celltype}"), path("$loomfile"), path("${celltype}_regulons.csv")
 
         script:
@@ -136,7 +134,6 @@ process auc {
             tuple val(celltype), path(loomfile), path(regfile)
 
         output:
-            //tuple path("${celltype}_auc_mtx.csv"), val("${celltype}")
             tuple val("${celltype}"), path("${celltype}_auc_mtx.csv")
 
         script:

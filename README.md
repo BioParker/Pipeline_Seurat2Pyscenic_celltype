@@ -1,0 +1,1 @@
+Nextflow pipeline for performing pySCENIC analysis separately on each cell type within a Seurat object. Relies on the existence of conda environment that has pySCENIC installed, (see https://pyscenic.readthedocs.io/en/latest/installation.html). 
